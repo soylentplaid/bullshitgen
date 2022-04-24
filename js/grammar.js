@@ -8,6 +8,23 @@
         missionBody : "Mission Body",
         origin : "<h2>#missionTitle#</h2>#missionBody#"
     },
+    bs_slogan: {
+        subject: ['Leveraging', 'Fashioning', 'Revolutionizing', 'Initiating',
+            'Mediating', 'Outsourcing', 'Promoting', 'Synergizing', 'Winning',
+            'Maintaining', 'Enhancing', 'Promoting', 'Envisioning', 'Reimagining',
+            'Providing', 'Executing', 'Delivering', 'Optimizing', 'Ideating',
+            'Mitigating', 'Producing'],
+        object: [
+            'enterprise-wide', 'network', 'multimedia', 'professional', 'corporate',
+            'competitive', 'efficient', 'high-quality', 'cost-effective', 'the best',
+            'existing', 'dramatic', 'out-of-the-box', 'strategic', 'optimized',
+            'deliverable', 'secure', 'forward thinking',],
+        verb: ['content', 'standards', 'information', 'resources', 'methods',
+            'creations', 'access', 'synergies', 'expectations', 'paradigms',
+            'opportunities', 'products', 'practices', 'best practices',
+            'strategies', 'solutions', 'brands',],
+        origin: "#subject# #object# #verb#.",
+    },
     neverbar : {
         vipTitle : ["Dr.", "Professor", "Lord", "Sir", "Captain", "His Majesty"],
         occupationBase : ["firefighter", "scientist", "spy", "smuggler", "mechanic", "astronaut", "adventurer", "pirate", "cowboy", "vampire", "detective", "soldier", "marine", "doctor", "ninja"],
