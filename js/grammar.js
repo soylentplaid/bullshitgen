@@ -63,7 +63,9 @@ let grammars = {
                 '#companyName# is the #leadAdj# in #subject# #noun#.',
                 '#companyNameFull#.  The #leadAdj# in #subject# #noun#.',
                 ],
-        missionBody : ['<p>#bodyText# #bodyText# #bodyText# #bodyText# #bodyText#</p>'],
+        missionBody : ['<p>#bodyText# #bodyText# #bodyText# #bodyText# #bodyText#</p>' + 
+                       '<p>#bodyText# #bodyText# #bodyText#</p>' +
+                       '<p>#bodyText# #bodyText# #bodyText# #bodyText# #bodyText#</p>'],
         companyName: companyName,
         companyNameFull: companyNameFull,
         origin : "<div>#intro# #missionBody#</div>"
@@ -85,6 +87,23 @@ let grammars = {
         'opportunities', 'products', 'practices', 'best practices',
         'strategies', 'solutions', 'brands',],
         origin: "#verb# #subject# #object#.",
+    },
+    bs_bio: {
+        origin: "Bio here!",
+    },
+    bs_jobtitle: {
+        seniority: "Junior Senior Lead Freelance Chief Vice Interim #seniority#-#seniority# Principal Internal Global International District Regional National Local Interstellar".split(" "),
+        title: "President Vice-President Manager Head Engineer Guru Master Director Synergist Supervisor Liason Officer Coordinator Administrator Architect Designer Orchestrator Technician Developer Producer Consultant Assistant Representative Strategist Rockstar Ninja Evangelist".split(" "),
+        predivision: ["Web ", "Cyber ", "Enterprise ", "Product ", "Metaverse ", "E-", "Future ", "Theoretical ", "Applied "],
+        userDisciplines: "Studies Impact Stories Interaction Narratives Education".split(" "),
+        division: [
+            companyName,
+            "Engineering", "Brand Synergy", "Software", "Hardware", "Firmware", "Applications", 
+            "Creative", "Interactivity", "User #userDisciplines#", "#predivision##division#",
+            "Synergy", "Brands", "Public Relations",
+        ],
+        companyName: companyName,
+        origin: ["#seniority# #title# of #division#", "#seniority# #division# #title#"],
     },
     neverbar : {
         vipTitle : ["Dr.", "Professor", "Lord", "Sir", "Captain", "His Majesty"],

@@ -18,6 +18,7 @@ $(document).ready(function() {
             });
 
             $("#bullshit_text").append(div);
+            $("#bullshit_text").append("<hr>");
 
         }
 
