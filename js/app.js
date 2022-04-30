@@ -24,11 +24,16 @@ $(document).ready(function() {
     }
 
     setTimeout(function() {
-        loadGrammar("scifi");
+        loadGrammar("bs_mission");
 
     }, 10);
 
     $('#grammarSelect').on('change', function() {
         loadGrammar(this.value);
+    });
+
+    $('#regenerate').on('click', function() {
+        let val = $("#grammarSelect").val();
+        loadGrammar(val);
     });
 });
