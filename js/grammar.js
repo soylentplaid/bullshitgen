@@ -59,7 +59,7 @@ let grammars = {
         technology: ["Java", "J2EE", "Ruby on Rails", "Web3", "Web 2.0", "Python", "Dynamic HTML",
                      "Fortran", "COBOL", "the Web", "the Metaverse", "IoT", "AI", "Machine Learning",
                      "Django", "C++", "PHP", "HTTP", "the Dark Web", "IIS", "Nginx", "React", "Node.js",
-                     "MongoDB", "Crypto", ""
+                     "MongoDB", "Crypto", "NFTs",
                      "#technology# 2.0", "native #technology#", "enterprise #technology#",
                      "#subject.capitalize# #technology#",],
         bodyText: ['We #feeling# #verbing# #noun# is the #adjective# of #noun#!', 
