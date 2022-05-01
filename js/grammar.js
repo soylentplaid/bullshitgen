@@ -17,12 +17,14 @@ let grammars = {
                    'Is #verbing# the future of #place#?',
                    'What is the future of #technology#?',
                    'Can we leverage #technology# for our #businessType#?',
+                   'Can we afford #technology#?',
                    'Can we afford to ignore #technology#?',
                    'Can we bring the power of #technology# to #technology#?'],
         answer: ['#question# #answer#', "We can!", "#belief.capitalize#.", "It's true!", 
                  "#verbing.capitalize# #subject# #noun#.", "And how!", "#noun.capitalize#!",
                  "Great question!", '#companyName# is the answer!', 'Ask #companyName#!',
-                 'Well let us ask you this: #question#', 'Think #technology#!'],
+                 'Well let us ask you this: #question#', 'Think #technology#!',
+                 'Can you afford not to?', 'We\'ve got the answer!', 'Great minds think alike!'],
         adjective: ["future", "abstraction", "meaning", "optimization", "best"],
         noun: ['content', 'standards', 'information', 'resources', 'methods',
                 'creations', 'access', 'synergies', 'expectations', 'paradigms',
@@ -80,7 +82,8 @@ let grammars = {
                 ],
         missionBody : ['<p>#bodyText# #bodyText# #bodyText# #bodyText# #bodyText#</p>' + 
                        '<p>#bodyText# #bodyText# #bodyText#</p>' +
-                       '<p>#bodyText# #bodyText# #bodyText# #bodyText# #bodyText#</p>'],
+                       '<p>#bodyText# #bodyText# #bodyText# #bodyText# #bodyText#</p>' +
+                       '<p>#companyName#.  We know what\'s best for your business.</p>'],
         companyName: companyName,
         companyNameFull: companyNameFull,
         origin : "<div>#intro# #missionBody#</div>"
@@ -112,7 +115,7 @@ let grammars = {
             predivision: ["Web ", "Cyber ", "Enterprise ", "Product ", "Metaverse ", "E-", "Future ", "Theoretical ", "Applied "],
         userDisciplines: "Studies Impact Stories Interaction Narratives Education".split(" "),
         division: [
-            companyName,
+            "#companyName# #division#",
             "Engineering", "Brand Synergy", "Software", "Hardware", "Firmware", "Applications", 
             "Creative", "Interactivity", "User #userDisciplines#", "#predivision##division#",
             "Synergy", "Brands", "Public Relations",
