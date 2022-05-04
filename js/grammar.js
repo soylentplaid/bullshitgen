@@ -113,7 +113,7 @@ let grammars = {
         seniority: "Junior Senior Lead Freelance Chief Vice Interim #seniority#-#seniority# Principal Internal Global International District Regional National Local Interstellar".split(" "),
         title: "President Vice-President Manager Head Engineer Guru Scholar Master Director Synergist Supervisor Liason Officer Coordinator Administrator Architect Designer Orchestrator Technician Developer Producer Consultant Assistant Representative Strategist Rockstar Ninja Evangelist Prophet".split(" "),
             predivision: ["Web ", "Cyber ", "Enterprise ", "Product ", "Metaverse ", "E-", "Future ", "Theoretical ", "Applied "],
-        userDisciplines: "Studies Impact Stories Interaction Narratives Education Colloquy".split(" "),
+        userDisciplines: "Studies Impact Stories Interaction Narratives Education".split(" "),
         division: [
             "#companyName# #division#",
             "Engineering", "Brand Synergy", "Software", "Hardware", "Firmware", "Applications",
