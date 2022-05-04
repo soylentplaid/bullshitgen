@@ -7,10 +7,10 @@ let companyNameFull = "Kabalypse Networking Concern LLC"
 
 let grammars = {
     bs_mission: {
-        question: ["How do you #verb# #adjective#?", 
+        question: ["How do you #verb# #adjective#?",
                    "What is the #adjective# of #place#?",
-                   "What is the #adjective# of #noun#?", 
-                   "How do you #verb# #place#?", 
+                   "What is the #adjective# of #noun#?",
+                   "How do you #verb# #place#?",
                    'What does "#phrase#" mean?',
                    'What does the term "#subject#" really mean?',
                    'Is your #businessType# ready for #place#?',
@@ -20,7 +20,7 @@ let grammars = {
                    'Can we afford #technology#?',
                    'Can we afford to ignore #technology#?',
                    'Can we bring the power of #technology# to #technology#?'],
-        answer: ['#question# #answer#', "We can!", "#belief.capitalize#.", "It's true!", 
+        answer: ['#question# #answer#', "We can!", "#belief.capitalize#.", "It's true!",
                  "#verbing.capitalize# #subject# #noun#.", "And how!", "#noun.capitalize#!",
                  "Great question!", '#companyName# is the answer!', 'Ask #companyName#!',
                  'Well let us ask you this: #question#', 'Think #technology#!',
@@ -38,7 +38,7 @@ let grammars = {
                 'cutting-edge', 'industry standard', 'gold standard',
                 "24/7", "24/7/365", "60/60/24/7/365"],
         cyberplace: ["the cyber#noun#", "cyber-#noun#", "e-#noun#", "the meta#noun#",],
-        place: ["enterprise", "the future", "e-commerce", "the internet", "e-space", 
+        place: ["enterprise", "the future", "e-commerce", "the internet", "e-space",
                 "the metaverse", "social media", "#cyberplace#"],
         phrase: ["#verb# the #adjective# of #place#", "#verb# #subject# #noun#",],
         phrasePast: ["#verb.ed# the #adjective# of #place#", "#verb.ed# #adjective# #noun#",],
@@ -64,7 +64,7 @@ let grammars = {
                      "MongoDB", "Crypto", "NFTs",
                      "#technology# 2.0", "native #technology#", "enterprise #technology#",
                      "#subject.capitalize# #technology#",],
-        bodyText: ['We #feeling# #verbing# #noun# is the #adjective# of #noun#!', 
+        bodyText: ['We #feeling# #verbing# #noun# is the #adjective# of #noun#!',
                    'We #verb# the #subject# so you don\'t have to!',
                    '#question# #answer#',
                    'We know you have many #choices# when it comes to #verbing# #noun#.  #companyName# is the #leadAdj# for your #businessType#.',
@@ -80,7 +80,7 @@ let grammars = {
                 '#companyName# is the #leadAdj# in #subject# #noun#.',
                 '#companyNameFull#.  The #leadAdj# in #subject# #noun#.',
                 ],
-        missionBody : ['<p>#bodyText# #bodyText# #bodyText# #bodyText# #bodyText#</p>' + 
+        missionBody : ['<p>#bodyText# #bodyText# #bodyText# #bodyText# #bodyText#</p>' +
                        '<p>#bodyText# #bodyText# #bodyText#</p>' +
                        '<p>#bodyText# #bodyText# #bodyText# #bodyText# #bodyText#</p>' +
                        '<p>#companyName#.  We know what\'s best for your business.</p>'],
@@ -111,12 +111,12 @@ let grammars = {
     },
     bs_jobtitle: {
         seniority: "Junior Senior Lead Freelance Chief Vice Interim #seniority#-#seniority# Principal Internal Global International District Regional National Local Interstellar".split(" "),
-        title: "President Vice-President Manager Head Engineer Guru Master Director Synergist Supervisor Liason Officer Coordinator Administrator Architect Designer Orchestrator Technician Developer Producer Consultant Assistant Representative Strategist Rockstar Ninja Evangelist Prophet".split(" "),
+        title: "President Vice-President Manager Head Engineer Guru Scholar Master Director Synergist Supervisor Liason Officer Coordinator Administrator Architect Designer Orchestrator Technician Developer Producer Consultant Assistant Representative Strategist Rockstar Ninja Evangelist Prophet".split(" "),
             predivision: ["Web ", "Cyber ", "Enterprise ", "Product ", "Metaverse ", "E-", "Future ", "Theoretical ", "Applied "],
         userDisciplines: "Studies Impact Stories Interaction Narratives Education".split(" "),
         division: [
             "#companyName# #division#",
-            "Engineering", "Brand Synergy", "Software", "Hardware", "Firmware", "Applications", 
+            "Engineering", "Brand Synergy", "Software", "Hardware", "Firmware", "Applications",
             "Creative", "Interactivity", "User #userDisciplines#", "#predivision##division#",
             "Synergy", "Brands", "Public Relations",
         ],
