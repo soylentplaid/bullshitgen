@@ -1,11 +1,14 @@
-console.log("app");
-
 $(document).ready(function() {
-
     function loadGrammar(name) {
         $("#bullshit_text").html("");
 
-        var grammar = tracery.createGrammar(grammars[name]);
+        let g = grammars[name];
+        if (name=="bs_bio") {
+            g["firstName"] = "Chris";
+            g["lastName"] = "Crocetti";
+        }
+        var grammar = tracery.createGrammar(g);
+
         $("#grammar").html(grammar.toText());
 
         for (var i = 0; i < 10; i++) {
