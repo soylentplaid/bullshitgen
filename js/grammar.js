@@ -126,7 +126,7 @@ let grammars = {
                           ],
         journeyStart: ["started his career at #business#",
                        "studied #discipline# at #school#",
-                       "got his start at #business# #verbing# "
+                       "got his start at #business# #verbing# #noun#"
                       ],
         actionVerb: ["delivers", "excels", "provides"],
         verbing: ['leveraging', 'fashioning', 'revolutionizing', 'initiating',
@@ -155,18 +155,21 @@ let grammars = {
                      "#number# years' experience in #technology# and #technology# to #companyName#",
                      "#number# years' experience in #technology# at #business#"],
         bringAction: ["brings", "delivers", "offers"],
+        enjoys: ["enjoys", "spends his time", "travels the world", "is passionate about"],
         companyName: companyName,
         firstSentence: ["#firstName# #journeyStart# before #journeyContinued#.",
-                        "#firstName# #bringAction# #moreThan# #experience#."],
+                        "After he #journeyStart#, #firstName# #bringAction# #moreThan# #experience#.",
+                        "#firstName# #bringAction# #moreThan# #experience#.",
+                        "#firstName# comes to #companyName# from #business#, where he excelled at #subject#."],
         nextSentence: ["While #praise#, #firstName# also #actionVerb# at #verbing# #noun#."],
-        enjoys: ["enjoys", "spends his time", "travels the world", "is passionate about"],
         personal: ["#firstName# #enjoys# #hobbies# and #hobbies#.",
                    "When not innovating in the field of #discipline#, #firstName# can be found #hobbies# in his spare time.",
                    "Loves #hobbies#.",
                    "Enjoys #hobbies# and #hobbies#."
                ],
         bioTemplate: ["#firstSentence# #nextSentence# #personal#"],
-        origin: "<div>#bioTemplate#</div>"
+        format: ["<div>#bioTemplate#</div>"],
+        origin: ["#format#"]
     },
     bs_jobtitle: {
         seniority: "Junior Senior Lead Freelance Chief Vice Interim #seniority#-#seniority# Principal Internal Global International District Regional National Local Interstellar".split(" "),
