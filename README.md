@@ -8,12 +8,9 @@ Well worry no more!!!  With **bullshitgen** by Kabalypse Networking Concern LLC,
 Good for all of your corporate typographical needs:
 
 - Mission statements
-- Calls to Action
-- Corporate stories
 - Job titles
 - Bio snippets
 - Inspirational quotes
-- Customer Testimonials
 
 And more!
 

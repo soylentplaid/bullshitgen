@@ -19,9 +19,33 @@
 		<div id="grammar"></div>
 	</body>
 	<footer>
-		<script src="js/vendor/jquery-3.6.0.min.js"></script>
-		<script src="js/vendor/tracery.min.js"></script>
-		<script src="js/grammar.js"></script>
-		<script src="js/app.js"></script>
+		<!-- BullshitGen vendor block -->
+		<script src="bullshit/vendor/jquery-3.6.0.min.js"></script>
+		<script src="bullshit/vendor/tracery.min.js"></script>
+		<script src="bullshit/grammar.js"></script>
+		<script src="bullshit/app.js"></script>
+		<!-- /BSGen vendor block -->
+
+		<!-- BSGen app block-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				let elementId = "#bullshit_text";
+				setTimeout(function() {
+			        loadGrammar(elementId, "bs_mission");
+
+			    }, 10);
+
+			    $('#grammarSelect').on('change', function() {
+			        loadGrammar(elementId, this.value);
+			    });
+
+			    $('#regenerate').on('click', function() {
+			        let val = $("#grammarSelect").val();
+			        loadGrammar(elementId, val);
+			    });
+			});
+			
+		</script>
+
 	</footer>
 </html>

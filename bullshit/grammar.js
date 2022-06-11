@@ -2,8 +2,8 @@
  * @author Chris Crocetti
  */
 
-let companyName = "Kabalypse";
-let companyNameFull = "Kabalypse Networking Concern LLC"
+let companyName = "Your Company";
+let companyNameFull = "Your Company Full Name LLC"
 
 let grammars = {
     bs_mission: {
@@ -107,11 +107,11 @@ let grammars = {
         origin: "#verb# #subject# #object#.",
     },
     bs_bio: {
-        business: ["Freedonia Web Design", "Gnomox Industrial Concern", "IBM", "Microsoft", "Mozilla", "Snapchat", "Facebook", "Google", "Red Hat",
-                   "Oracle", "Kentucky Fried Chicken (KFC)", "an unspecified dark web startup", "Blabr", "Bznezz", "Los Pollos Hermanos", "Artmill Inc."
+        business: ["Freedonia Web Design", "Gnomox Industrial Concern", "Kabalypse Networking Concern LLC", "Artmill Inc.",
+                    "IBM", "Microsoft", "Mozilla", "Snapchat", "Facebook", "Google", "Red Hat", "Alphabet", "Meta", "Oracle", 
+                    "Initech", "an unspecified dark web startup", "Blabr", "Bznezz", "StarTup", "BullShip", "Los Pollos Hermanos"
                   ],
-        school: ["Laurentian University", "Harvard", "Stanford", "Yale Business School", "MIT", "Hollywood Upstairs Medical College",
-                 "Univeristy of Toronto", "University of Waterloo"],
+        school: ["Laurentian University", "Harvard", "Stanford", "Yale Business School", "MIT", "Univeristy of Toronto", "University of Waterloo", "Hollywood Upstairs Medical College"],
         discipline: ["technology", "IT", "design", "web design", "software development", "software engineering", "digital management",
                      "excellence", "management studies", "bio-ethics", "synergy management"],
         technology: ["Java", "J2EE", "Ruby on Rails", "Web3", "Web 2.0", "Python", "Dynamic HTML",
@@ -124,7 +124,7 @@ let grammars = {
                   "playing #music#", "skydiving", "bungee-jumping", "hang gliding", "traveling", "working on cars",
                   "playing sportsball", "#hobbies# and #hobbies#",
                  ],
-        music: ["folk", "bluegrass", "country", "heavy metal", "jazz", "rockabilly", "rock-n-roll", "surf rock", "death metal",
+        music: ["folk", "bluegrass", "country", "heavy metal", "jazz", "rockabilly", "rock-n-roll", "surf rock", "death metal", "polka",
                 "punk rock", "EDM", "classical", "electro house", "#music#-#music#", "fusion #music#", "neo-#music#", "classic #music#"],
         number: ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15", "75 combined"],
         numberText: ["one","two","three","four","five","six","seven","eight","nine","ten","fifteen"],
@@ -172,14 +172,13 @@ let grammars = {
         nextSentence: ["While revolutionizing the field of #discipline#, #firstName# also #actionVerb# at #verbing# #noun#.",
                        "When #firstName# isn't #verbing# #subject# #noun#, he's #verbing# #subject# #noun#.",
                        "#firstName# is proud to #bringAction# #subject# #noun# to #companyName#.",
-
                       ],
         personal: ["#firstName# #enjoys# #hobbies# and #hobbies#.",
                    "When not innovating in the field of #discipline#, #firstName# can be found #hobbies# in his spare time.",
                    "Loves #hobbies#.",
                    "Enjoys #hobbies# and #hobbies#."
                ],
-        body: ["<div>#firstSentence# #nextSentence# #personal#</div>"],
+        body: ["<h3>#firstName# #lastName#</h3><div>#firstSentence# #nextSentence# #personal#</div>"],
         origin: ["#body#"]
     },
     bs_jobtitle: {
@@ -196,6 +195,4 @@ let grammars = {
         companyName: companyName,
         origin: ["#seniority# #title# of #division#", "#seniority# #division# #title#"],
     },
-
-
 }
